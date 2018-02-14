@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grids Tutorial</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="grids-tut-style.css">
+</head>
+<body id="top-page" onresize="updateWidth()">
+    
+        <!-- Start, Nav Bar -->
+		<nav>
+			<div class="card navbar">
+				<div class="logo"> CSS Grids</div>
+				<div class="navlist">
+<!--					<ul class="ulnav">
+						<li class="linav"><a href="#top-page" class="anav">HOME</a></li>
+						<li class="linav"><a href="" class="anav">PROJECTS</a></li>
+						<li class="linav"><a href="" class="anav">ABOUT</a></li>
+                        <li class="linav"><a id="fb" href="" class="anav">fb</a></li>
+					</ul>-->
+				</div>
+			</div>
+		</nav>
+        <!-- End, Nav Bar -->
+		<div class="title-container card">
+			<h1 class="title ">
+				CSS Grids Tutorial
+			</h1>
+		</div>
+
+	<content>
+		<div class="showcase card" onresize="onresizeTask()">
+			<div class="showcase-title">
+				<h2>Without CSS Grids</h2>
+			</div>
+
+			<div class="showcase-container">
+				<div class="card card-element card-colored-1 Without-grids"><div class="width-bar"> 640 px</div>1</div>
+				<div class="card card-element card-colored-2 Without-grids"><div class="width-bar"> 640 px</div>2</div>
+				<div class="card card-element card-colored-3 Without-grids"><div class="width-bar"> 640 px</div>3</div>
+				<div class="card card-element card-colored-4 Without-grids"><div class="width-bar"> 640 px</div>4</div>
+				<div class="card card-element card-colored-5 Without-grids"><div class="width-bar"> 640 px</div>5</div>
+				<div class="card card-element card-colored-6 Without-grids"><div class="width-bar"> 640 px</div>6</div>
+			</div>
+		</div>
+
+		<div class="showcase card">
+			<div class="showcase-title">
+				<h2>CSS Grids - Basic (1)</h2>
+				<h3>Fixed width and height</h3>
+			</div>
+
+			<div class="showcase-container grid grid1">
+				<div class="card card-element card-colored-1"><div class="width-bar"> 640 px</div>1</div>
+				<div class="card card-element card-colored-2"><div class="width-bar"> 640 px</div>2</div>
+				<div class="card card-element card-colored-3"><div class="width-bar"> 640 px</div>3</div>
+				<div class="card card-element card-colored-4"><div class="width-bar"> 640 px</div>4</div>
+				<div class="card card-element card-colored-5"><div class="width-bar"> 640 px</div>5</div>
+				<div class="card card-element card-colored-6"><div class="width-bar"> 640 px</div>6</div>
+			</div>
+		</div>
+
+		<div class="showcase card">
+			<div class="showcase-title">
+				<h2>CSS Grids - Basic (2)</h2>
+				<h3>Flexible width | fixed height</h3>
+				<p>Using fractions (fr unit)</p>
+			</div>
+
+			<div class="showcase-container grid grid2">
+				<div class="card card-element card-colored-1"><div class="width-bar"> 640 px</div>1</div>
+				<div class="card card-element card-colored-2"><div class="width-bar"> 640 px</div>2</div>
+				<div class="card card-element card-colored-3"><div class="width-bar"> 640 px</div>3</div>
+				<div class="card card-element card-colored-4"><div class="width-bar"> 640 px</div>4</div>
+				<div class="card card-element card-colored-5"><div class="width-bar"> 640 px</div>5</div>
+				<div class="card card-element card-colored-6"><div class="width-bar"> 640 px</div>6</div>
+			</div>
+		</div>
+
+		<div class="showcase card">
+			<div class="showcase-title">
+				<h2>CSS Grids - Basic (3)</h2>
+				<h3>Flexible width | fixed height</h3>
+				<p>Using 'auto' and fractions 'fr'</p>
+			</div>
+
+			<div class="showcase-container grid grid3">
+				<div class="card card-element card-colored-1"><div class="width-bar"> 640 px</div>1</div>
+				<div class="card card-element card-colored-2"><div class="width-bar"> 640 px</div>2</div>
+				<div class="card card-element card-colored-3"><div class="width-bar"> 640 px</div>3</div>
+				<div class="card card-element card-colored-4"><div class="width-bar"> 640 px</div>4</div>
+				<div class="card card-element card-colored-5"><div class="width-bar"> 640 px</div>5</div>
+				<div class="card card-element card-colored-6"><div class="width-bar"> 640 px</div>6</div>
+			</div>
+		</div>
+
+		<div class="showcase card">
+			<div class="showcase-title">
+				<h2>CSS Grids - Basic (4)</h2>
+				<h3>Flexible width | fixed height</h3>
+				<p>Using minmax() and fractions 'fr'</p>
+			</div>
+
+			<div class="showcase-container grid grid4">
+				<div class="card card-element card-colored-1"><div class="width-bar"> 640 px</div>1</div>
+				<div class="card card-element card-colored-2"><div class="width-bar"> 640 px</div>2</div>
+				<div class="card card-element card-colored-3"><div class="width-bar"> 640 px</div>3</div>
+				<div class="card card-element card-colored-4"><div class="width-bar"> 640 px</div>4</div>
+				<div class="card card-element card-colored-5"><div class="width-bar"> 640 px</div>5</div>
+				<div class="card card-element card-colored-6"><div class="width-bar"> 640 px</div>6</div>
+			</div>
+		</div>
+
+		<div class="showcase card">
+			<div class="showcase-title">
+				<h2>CSS Grids - Position (5)</h2>
+				<h3>Positioning grid items</h3>
+				<p>Using grid-column-(start/end)</p>
+			</div>
+
+			<div class="showcase-container grid grid5">
+				<div class="card card-element card-colored-1"><div class="width-bar"> 640 px</div>1</div>
+				<div class="card card-element card-colored-2"><div class="width-bar"> 640 px</div>2</div>
+				<div class="card card-element card-colored-3"><div class="width-bar"> 640 px</div>3</div>
+				<div class="card card-element card-colored-4"><div class="width-bar"> 640 px</div>4</div>
+				<div class="card card-element card-colored-5"><div class="width-bar"> 640 px</div>5</div>
+				<div class="card card-element card-colored-6"><div class="width-bar"> 640 px</div><div class="width-bar"> 640 px</div>6</div>
+			</div>
+		</div>
+
+		<div class="showcase card">
+			<div class="showcase-title">
+				<h2>CSS Grids - Position (6)</h2>
+				<h3>Positioning grid items</h3>
+				<p>Using areas</p>
+			</div>
+
+			<div class="showcase-container grid grid6">
+				<div class="card card-element card-colored-1"><div class="width-bar"> 640 px</div>1</div>
+				<div class="card card-element card-colored-2"><div class="width-bar"> 640 px</div>2</div>
+				<div class="card card-element card-colored-3"><div class="width-bar"> 640 px</div>3</div>
+				<div class="card card-element card-colored-4"><div class="width-bar"> 640 px</div>4</div>
+				<div class="card card-element card-colored-5"><div class="width-bar"> 640 px</div>5</div>
+				<div class="card card-element card-colored-6"><div class="width-bar"> 640 px</div>6</div>
+			</div>
+		</div>
+
+		<div class="showcase card">
+			<div class="showcase-title">
+				<h2>CSS Grids - Auto-fitting (7)</h2>
+				<h3>Handling auto fitting</h3>
+				<p>Using auto-fit and minmax()</p>
+			</div>
+
+			<div class="showcase-container grid grid7">
+				<div class="card card-element card-colored-1"> <div class="width-bar"> 640 px</div>1</div>
+				<div class="card card-element card-colored-2"><div class="width-bar"> 640 px</div>2</div>
+				<div class="card card-element card-colored-3"><div class="width-bar"> 640 px</div>3</div>
+				<div class="card card-element card-colored-4"><div class="width-bar"> 640 px</div>4</div>
+				<div class="card card-element card-colored-5"><div class="width-bar"> 640 px</div>5</div>
+				<div class="card card-element card-colored-6"><div class="width-bar"> 640 px</div>6</div>
+			</div>
+		</div>
+
+		<div class="showcase card">
+			<div class="showcase-title">
+				<h2>CSS Grids - Bonus (1)</h2>
+				<h3>Responsive website prototype</h3>
+				<p>Using areas and media queries</p>
+			</div>
+
+			<div class="showcase-container grid grid-pro1">
+				<div class="card card-element card-colored-1">
+					<div class="width-bar"> 640 px</div>
+						<div>Header</div> 
+				</div>
+				<div class="card card-element card-colored-2">
+					<div class="width-bar"> 640 px</div>
+						<div>Menu</div> 
+				</div>
+				<div class="card card-element card-colored-3">
+					<div class="width-bar"> 640 px</div>
+						<div>Content</div> 
+				</div>
+				<div class="card card-element card-colored-4">
+					<div class="width-bar"> 640 px</div>
+						<div>Footer</div> 
+				</div>
+			</div>
+		</div>
+
+	<script type="text/javascript">
+		window.onresize = function(){
+			widthBars = document.getElementsByClassName("width-bar");
+			for (i=0; i<widthBars.length; i++) {
+				widthBars[i].innerHTML = widthBars[i].parentNode.offsetWidth + " px";
+			}
+		}
+		window.onstart = window.onresize();
+	</script>
+	</content>
+
+	<div class="card">
+		
+	</div>
+
+</body>
+</html>
